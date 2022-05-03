@@ -1,0 +1,73 @@
+#chat-box{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 1px sandybrown solid;
+}
+#message-container{
+    margin: 10px 10px 10px 10px;
+    height: 500px;
+    width: 520px;
+    overflow-y: auto;
+    background-color: aliceblue;
+    font: 1.22em;
+    display: flex;
+    flex-direction: column;
+}
+
+#send-container{
+    display: flex;
+    /* grid-template-columns: 500px 100px; */
+    /* flex-direction: column; */
+    border: 1px salmon solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    height: 25px;
+    width: 100%;
+}
+
+#send-button{
+    font-size: 1.33em;
+    background-color: aqua;
+    color: black;
+    height: min-content;
+    width: min-content;
+}
+
+.message-sent{
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+    /* float: right; */
+    background-color: antiquewhite;
+}   
+
+.message-sent div:first-child{
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    flex-direction: row-reverse;    
+    background-color: coral;
+}
+
+
+.message-recieved{
+
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+    /* width: fit-content; */
+
+}
+
+.message-recieved div:first-child{
+    background-color: rgb(238, 110, 238);
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+
+}
